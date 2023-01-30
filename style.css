@@ -1,0 +1,107 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Background.png");
+    background-color: #000000;
+    background-size: auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+  
+.container {
+    text-align: center;
+    padding: 20px;
+}
+  
+.page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+    font-size: 2em;
+    font-weight: bold;
+}
+  
+.page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+}
+  
+.page-logo {
+    width: 200px;
+}
+  
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+  
+body > img {
+    margin: 0 10px;
+}
+  
+img {
+    max-height: 250px;
+}
+
+.setup-conversao {
+  margin: 3% auto 0;
+  width: 40%;
+  background-color: rgba(218, 30, 38,0.9);
+  border: solid white 3px;
+  border-radius: 30px;
+}
+
+.setup-conversao fieldset > legend, label {
+  padding: 15px;
+  color: white;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.setup-conversao select {
+  padding: 0.5em 2em;
+}
+
+.ultimo-select {
+  margin: 0 0 1em;
+}
+
+#valor-entrada {
+  width: 25%;
+  margin: 0 0 1em;
+  padding: 0.25em;
+}
+
+button {
+width: 40%;
+    padding: 0.25em;
+    margin: 0 auto 1em;
+    background: white;
+    color: rgba(218, 30, 38,0.9);
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+#valor-convertido{
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 0.8em;
+}
+
+.imagem-moedas {
+  width: 100%;
+  position: absolute;
+  top: 65%;
+  filter: opacity(0.4);
+}
