@@ -1,50 +1,109 @@
+/* CSS comum a todas as páginas */
+
 body {
-    font-family: "Roboto Mono", monospace;
-    text-align: center;
-    background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Background.png");
-    background-color: #000000;
-    background-size: auto;
-    background-position: center top;
-    background-repeat: no-repeat;
-    height: 100vh;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-color: #000000;
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
-  
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.botao-voltar {
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  width: 4%;
+  background: white;
+  color: #144179;
+  font-size: 2em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* Home */
+.body-home {
+  color: white;
+  background-image: url(imagens/bg_home.jpg);
+}
+
+.principal-home {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 3em 0 0;
+  color: white;
+}
+
+.escolha {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin: 2em auto 0;
+}
+
+.escolha a {
+  text-decoration: none;
+  color: white;
+}
+
+.escolha img {
+  width: 180px;
+  margin-top: 2em;
+}
+
+.escolha figcaption {
+  margin-top: 2em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#caption-cambio {
+  margin-top: 2.35em;
+}
+
+#caption-interestelar {
+  margin-top: 3.85em;
+}
+
+
+/* Conversor de moedas */
+
+.body-conversor-moedas {
+  background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Background.png");
+}
+
 .container {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
-  
+
 .page-title {
-    color: #ffffff;
-    margin: 0 0 5px;
-    font-size: 2em;
-    font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 5px;
+  font-size: 2em;
+  font-weight: bold;
 }
   
 .page-subtitle {
-    color: #ffffff;
-    margin-top: 5px;
+  color: #ffffff;
+  margin-top: 5px;
 }
   
 .page-logo {
-    width: 200px;
+  width: 200px;
 }
   
-.alura-logo {
-    width: 40px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-  
-body > img {
-    margin: 0 10px;
-}
-  
-img {
-    max-height: 250px;
-}
-
 .setup-conversao {
   margin: 3% auto 0;
   width: 40%;
@@ -74,21 +133,21 @@ img {
   padding: 0.25em;
 }
 
-button {
-width: 40%;
-    padding: 0.25em;
-    margin: 0 auto 1em;
-    background: white;
-    color: rgba(218, 30, 38,0.9);
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    transition: 0.5s all;
-    cursor: pointer;
+.setup-conversao button {
+  width: 40%;
+  padding: 0.25em;
+  margin: 0 auto 1em;
+  background: white;
+  color: rgba(218, 30, 38,0.9);
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s all;
+  cursor: pointer;
 }
 
-button:hover {
+.setup-conversao button:hover {
   transform: scale(1.2);
 }
 
@@ -104,4 +163,5 @@ button:hover {
   position: absolute;
   top: 65%;
   filter: opacity(0.4);
+  max-height: 250px;
 }

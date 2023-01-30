@@ -17,8 +17,6 @@ var cotacaoYuanEuro = 0.14;
 var valorEntrada = 0;
 var valorSaída = 0;
 
-//calculo Real
-
 function Converter() {
     valorEntrada = document.getElementById("valor-entrada").value;
      
@@ -83,26 +81,21 @@ function Converter() {
         }
     }
 
+    valorSaída = valorSaída.toFixed(2);
+
     var valorConvertidoHTML = document.getElementById("valor-convertido");
 
-    if 
-    var valorConvertido = "O valor convertido é R$ " + valorSaída;
+    var valorConvertido;
+
+    if (document.getElementById("select-2").value == "real"){
+        valorConvertido = `O valor convertido é R$ ${valorSaída}.`
+    } else if (document.getElementById("select-2").value == "dolar"){
+        valorConvertido = `O valor convertido é $ ${valorSaída}.`
+    } else if (document.getElementById("select-2").value == "euro"){
+        valorConvertido = `O valor convertido é € ${valorSaída}.`
+    } else if (document.getElementById("select-2").value == "yuan"){
+        valorConvertido = `O valor convertido é ¥ ${valorSaída}.`
+    }
 
     valorConvertidoHTML.innerHTML = valorConvertido;
 }
-
-
-/*
-function Converter() {
-    var valorElemento = document.getElementById("valor");
-  
-    var valor = valorElemento.value;
-    var valorEmEuroNumerico = parseFloat(valor);
-  
-    var valorEmReal = valorEmEuroNumerico * 5;
-    console.log(valorEmReal);
-    var elementoValorConvertido = document.getElementById("valorConvertido");
-    var valorConvertido = "O resultado em real é R$ " + valorEmReal;
-    elementoValorConvertido.innerHTML = valorConvertido;
-  }
-  */
