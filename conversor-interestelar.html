@@ -3,46 +3,47 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Conversor Monetário</title>
+        <title>Conversor Interestelar</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
 
-        <script src="javascript-moedas.js"></script>
+        <script src="javascript-distancias.js"></script>
         
     </head>
 
-    <body class="body-conversor-moedas">
+    <body class="body-conversor-distancias">
         <div class="container">
             <h1 class="page-title">
-              Conversor de moedas
+              Conversor Interestelar
             </h1>
             <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
         </div>
 
-        <section class="setup-conversao">
+        <section class="setup-conversao" id="setup-conversao-distancias">
+            <h2>Qual é a distância entre as estrelas?</h2>
+
           <fieldset>
-            <legend>Faça a conversão de</legend>
+            <legend>Inserir a distância em</legend>
             <select id="select-1" required>
-              <option value="">Selecione uma moeda</option>
-              <option value="real">Real</option>
-              <option value="dolar">Dólar</option>
-              <option value="euro">Euro</option>
-              <option value="yuan">Yuan</option>
+              <option value="">Selecione uma unidade de distância</option>
+              <option value="mi">milhas</option>
+              <option value="km">quilômetros</option>
+              <option value="ly">anos-luz</option>
             </select>
           </fieldset>
 
           <fieldset>
-            <legend>para</legend>
+            <legend>Descobrir a distância em</legend>
             <select id="select-2" class="ultimo-select" required>
-              <option value="">Selecione uma moeda</option>
-              <option value="real">Real</option>
-              <option value="dolar">Dólar</option>
-              <option value="euro">Euro</option>
-              <option value="yuan">Yuan</option>
+              <option value="">Selecione uma unidade de distância</option>
+              <option value="mi">milhas</option>
+              <option value="km">quilômetros</option>
+              <option value="ly">anos-luz</option>
             </select>
           </fieldset>
           
-          <label for="valor-a-converter">Valor a converter</label>
+          
+          <label for="valor-entrada">Insira a distância</label>
           <input type="text" id="valor-entrada">
           <button type="submit" onclick="Converter()">Converter</button>
         </section>
@@ -53,10 +54,8 @@
 
         <a class="logo-alura" href="https://alura.com.br/" target="_blank">
           <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-        </a>   
-        <div class="imagem-moedas">
-        <img src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Convers%C3%A3o+1.png">
-        </div>
-        <a href="home.html"><button class="botao-voltar">&#129044;</button></a>
+        </a>
+
+        <a href="home.html"><button class="botao-voltar" id="botao-voltar-distancias">&#129044;</button></a>
     </body>
 </html>

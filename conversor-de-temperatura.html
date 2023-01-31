@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversor Térmico</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="javascript-temperaturas.js"></script>
+        
+    </head>
+
+    <body class="body-conversor-temperaturas">
+        <div class="container">
+            <h1 class="page-title">
+              Conversor Térmico
+            </h1>
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+        </div>
+
+        <section class="setup-conversao" id="setup-conversao-temperaturas">
+          <fieldset>
+            <legend>Faça a conversão de</legend>
+            <select id="select-1" required>
+              <option value="">Selecione uma unidade de temperatura</option>
+              <option value="C">Celsius</option>
+              <option value="F">Fahrenheit</option>
+              <option value="K">Kelvin</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>para</legend>
+            <select id="select-2" class="ultimo-select" required>
+              <option value="">Selecione uma unidade de temperatura</option>
+              <option value="C">Celsius</option>
+              <option value="F">Fahrenheit</option>
+              <option value="K">Kelvin</option>
+            </select>
+          </fieldset>
+          
+          <label for="valor-entrada">Valor a converter</label>
+          <input type="text" id="valor-entrada">
+          <button type="submit" onclick="Converter()">Converter</button>
+        </section>
+
+        <section class="resultado">
+          <h2 id="valor-convertido"></h2>
+        </section>
+
+        <a class="logo-alura" href="https://alura.com.br/" target="_blank">
+          <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        </a>   
+        <a href="home.html"><button class="botao-voltar" id="botao-voltar-distancia">&#129044;</button></a>
+    </body>
+</html>

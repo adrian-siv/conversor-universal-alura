@@ -10,6 +10,38 @@ body {
   height: 100vh;
 }
 
+.setup-conversao {
+  margin: 3% auto 0;
+  width: 40%;
+  border-radius: 30px;
+}
+
+.setup-conversao fieldset > legend, label {
+  padding: 15px;
+  color: white;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.setup-conversao select {
+  padding: 0.5em 2em;
+}
+
+.setup-conversao button {
+  width: 40%;
+  padding: 0.25em;
+  margin: 0 auto 1em;  
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.setup-conversao button:hover {
+  transform: scale(1.2);
+}
+
 .alura-logo {
   width: 40px;
   position: absolute;
@@ -23,7 +55,6 @@ body {
   left: 5px;
   width: 4%;
   background: white;
-  color: #144179;
   font-size: 2em;
   font-weight: bold;
   border: none;
@@ -104,23 +135,9 @@ body {
   width: 200px;
 }
   
-.setup-conversao {
-  margin: 3% auto 0;
-  width: 40%;
+#setup-conversao-moedas {
   background-color: rgba(218, 30, 38,0.9);
   border: solid white 3px;
-  border-radius: 30px;
-}
-
-.setup-conversao fieldset > legend, label {
-  padding: 15px;
-  color: white;
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
-.setup-conversao select {
-  padding: 0.5em 2em;
 }
 
 .ultimo-select {
@@ -133,22 +150,10 @@ body {
   padding: 0.25em;
 }
 
-.setup-conversao button {
-  width: 40%;
-  padding: 0.25em;
-  margin: 0 auto 1em;
-  background: white;
+#setup-conversao-moedas button {
   color: rgba(218, 30, 38,0.9);
-  font-size: 18px;
-  font-weight: bold;
+  background: white;
   border: none;
-  border-radius: 5px;
-  transition: 0.5s all;
-  cursor: pointer;
-}
-
-.setup-conversao button:hover {
-  transform: scale(1.2);
 }
 
 #valor-convertido{
@@ -164,4 +169,54 @@ body {
   top: 65%;
   filter: opacity(0.4);
   max-height: 250px;
+}
+
+#botao-voltar-moedas {
+  color: rgb(218, 30, 38);
+}
+
+
+/* Conversor de distâncias */
+
+.setup-conversao h2{
+  padding: 1em 0 0.5em;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.body-conversor-distancias {
+  background-image: url(imagens/bg_interestelar.jpg);
+}
+
+#setup-conversao-distancias {
+  background-color: rgba(0,0,0,0.9);
+  border: solid yellow 3px;
+}
+
+#setup-conversao-distancias button {
+  color: yellow;
+  background-color: #000000;
+  border: solid yellow 2px;
+}
+
+
+/* Conversor de temperaturas */
+
+.body-conversor-temperaturas {
+  background-image: url(imagens/bg_temperatura.jpg);
+}
+
+#setup-conversao-temperaturas {
+  background-color: rgba(87, 84, 84, 0.8);
+}
+
+#setup-conversao-temperaturas button {
+  color: firebrick;
+  background-color: rgb(223, 203, 203);
+  border: solid rgb(61, 58, 58) 2px;
+}
+
+#botao-voltar-temperaturas {
+  color: rgb(87, 84, 84);
 }
